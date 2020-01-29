@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { colors } from './colors';
 
 export default createGlobalStyle`
   * {
@@ -13,12 +14,13 @@ export default createGlobalStyle`
   }
 
   body{
-    background: #7159c1;
     -webkit-font-smoothing: antialiased;
+    font-family: 'Raleway', sans-serif;
   }
 
   body, input, button{
-    color: #222;
+    color: ${colors.black};
+    background-color: ${colors.white};
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
   }
